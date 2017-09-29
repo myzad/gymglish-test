@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>Test 1</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/style.css">
+  </head>
+    
+  <body>
+      
+    <div class="container">
+        
+        <div class="row">
+             <div class="alert alert-success" role="alert" id="successA"></div>
+            
+            <div class="col-xs-12">
+                <h1>Gymglish Website</h1>
+                <p>Gymglish propose des cours d'anglais en ligne par e-mails quotidiens. Dans chaque leçon, découvrez votre épisode de la saga Delabigne à San Francisco : humour, anglais 'business', accents variés...</p>
+                <button type="button" class="btn btn-info" data-toggle="modal" data-target="#modal">Learn more</button>
+            </div>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="modal">
+                <div class="modal-dialog" role="form">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h5 class="modal-title">My modal</h5>
+                        </div>
+                        <div class="modal-body">
+                             <div class="form-group row">
+                                 <div class="col-sm-12">
+                                  When you click on the 'Ok' button it should display a message with your firstname in the top of the page.<br>
+                                    </div>
+                                 <label for="username" class="col-sm-12 col-form-label">Username</label>
+                                 <div class="col-sm-12">
+                                     <input type="text" class="form-control" id="username" required>
+                                 </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-info" onclick="user()">Ok</button>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Blocks -->
+            <div class="col-sm-6 col-md-3">
+                Block 1
+            </div>
+            <div class="col-sm-6 col-md-3">
+                Block 2
+            </div>
+            <div class="col-sm-6 col-md-3">
+                Block 3
+            </div>
+            <div class="col-sm-6 col-md-3">
+                Block 4
+            </div>
+        </div>
+    </div>
+      
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>

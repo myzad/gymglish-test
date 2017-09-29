@@ -1,0 +1,11 @@
+.alert{
+    display: none;
+}
+.row .col-xs-12{
+    background-color: aliceblue;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+.btn-primary{
+    cursor: pointer;
+} 

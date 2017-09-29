@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8">
+    <title>Test 2</title>
+    <style>
+        
+        #new span{
+            background-color: gainsboro;
+            padding: 3px 5px;
+            margin-right: 5px;
+            margin-left: 5px;
+            border-radius: 2px;
+            cursor: pointer;
+        }
+
+    </style>
+    
+<body>
+    
+     <!-- ... -->
+    The first time I saw Luna DeLune, she <input type="text" name="BRAM212854" autocomplete="off" autocorrect="off" autocapitalize="off" maxlength="70" size="20" title="teeth her brushed had" value="teeth her brushed had" writeonly="" /> . <br/>
+    We <input class="shuffle" id="shuffle" type="text" name="BRAM212855" autocomplete="off" autocorrect="off" autocapitalize="off" maxlength="70" size="20" title="when watched television" value="when watched television" writeonly="" /> you called.<br/>
+     <!-- ... -->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript">
+        
+        'use strict';
+        
+        //to disappear input
+        var val = document.getElementById("shuffle");
+        var text = val.value;
+        var string = text.split(" ");
+            
+        var change = document.createElement("span");
+        change.setAttribute("id","new");
+        var parent = val.parentNode;
+        parent.replaceChild(change, val);
+        
+        //display words
+        for(var i = 0; i < string.length; i++){
+            
+            //add bubbles
+            var buttons = document.createElement("span");
+            buttons.setAttribute("id",string[i]);
+            var textInput = document.createTextNode(string[i]);
+            buttons.appendChild(textInput);
+            change.appendChild(buttons);
+            
+            //drag and drop
+            $(function(){
+                $( "#new" ).sortable();
+                $( "#new" ).disableSelection();
+            });
+        }
+        
+
+    </script>
+</body>
+    
+</html>
+
